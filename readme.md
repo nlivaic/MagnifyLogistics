@@ -2,7 +2,9 @@
     
 ## Basic design
 
-* High level overview: https://excalidraw.com/#json=c9u5-Nu4Lq0OYEyyR7gtH,0QrSBDiK9z6nwsS0_Z2CJw
+* High level overview ([original](https://excalidraw.com/#json=c9u5-Nu4Lq0OYEyyR7gtH,0QrSBDiK9z6nwsS0_Z2CJw)): ![MagnifyLogistics_Design](https://user-images.githubusercontent.com/26722936/165629580-97459613-dc2e-47ae-adb4-3f3c27547fc0.png)
+
+
 * Projects:
   * `Core` contains business logic and has no external dependencies. The idea was to go along with Clean Architecture principles.
   * `Core.Tests` has a few tests on how bookings are made. Method names are designed to be self-explanatory.
