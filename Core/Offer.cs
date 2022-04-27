@@ -27,7 +27,7 @@ public class Offer : BaseEntity<Guid>
 
     public Booking Accept(Shipper shipper)
     {
-        if (ShipmentRequest.Shipper != shipper)
+        if (ShipmentRequest.Shipper.Id != shipper.Id)
         {
             throw new ArgumentException("Offer can be accepted by the shipper owning the shipment request.");
         }
@@ -41,7 +41,7 @@ public class Offer : BaseEntity<Guid>
     
     public void Reject(Shipper shipper)
     {
-        if (ShipmentRequest.Shipper != shipper)
+        if (ShipmentRequest.Shipper.Id != shipper.Id)
         {
             throw new ArgumentException("Offer can be rejected by the shipper owning the shipment request.");
         }
